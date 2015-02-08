@@ -1,0 +1,3 @@
+projdata <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
+datetime <- paste(projdata$Date,projdata$Time)
+dtclass <-strptime(datetime,"%d/%m/%Y %H:%M:%S")
